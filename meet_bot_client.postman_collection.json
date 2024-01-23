@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "397d0c61-c743-499e-92e4-140b014c8392",
+		"name": "MEET BOT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start meeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"meetingLink\": \"meeting_link\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/google-meet/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"google-meet",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "End meeting",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"meetingLink\": \"meeting_link\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/google-meet/end",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"google-meet",
+						"end"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send message to participants",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"This is a test message\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/google-meet/send-message-to-participants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"google-meet",
+						"send-message-to-participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mute unmute microphone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/google-meet/mute-unmute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"google-meet",
+						"mute-unmute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change layout",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/google-meet/change-layout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"google-meet",
+						"change-layout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
